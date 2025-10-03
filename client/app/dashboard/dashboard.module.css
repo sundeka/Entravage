@@ -5,6 +5,21 @@
   flex-direction: row;
 }
 
+.content {
+  width: 100%;
+}
+
+.feed {
+  background-color: var(--shade2);
+  width: 400px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  cursor: pointer;
+}
+
 .sidebar {
   background-color: var(--shade2);
   padding-block: 13px;
@@ -12,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 144px;
 }
 
 .header {
@@ -20,11 +36,19 @@
   align-items: center;
   justify-content: center;
   color: var(--shade5);
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: var(--shade3);
+  padding-bottom: 6px;
+}
+
+.headerText {
+  font-size: larger;
 }
 
 .navigation {
-  height: -webkit-fill-available;
-  padding-block: 12px;
+  height: 100%;
+  padding-block: 16px;
 }
 
 .list {
@@ -40,14 +64,56 @@
 .listItem {
   color: var(--shade4);
   background-color: var(--shade1);
-  height: 40px;
-  border-radius: 10px;
+  border-radius: 5px;
+  height: 36px;
+  cursor: pointer;
+  border-color: var(--shade3);
+  border-width: thin;
+  border-style: solid;
 }
 
 .listItem:last-child {
   margin-top: auto;
+  background-color: var(--red-shade1);
+  border-color: var(--red-shade2);
+}
+
+.listItemLink {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-inline: 15px;
+  font-size: 14px;
+  text-decoration: none !important;
+}
+
+.listItemLink:visited, .listItemLink:active {
+  color: var(--shade4);
+}
+
+.listItemLink:hover {
+  color: var(--shade5);
 }
 
 .footer {
-  height: 55px;
+  border-top-style: solid;
+  border-top-width: thin;
+  border-top-color: var(--shade3);
+  padding-top: 9px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLink {
+  color: var(--shade3);
+  font-size: smaller;
+}
+
+.footerLink:hover {
+  color: var(--shade5);
 }

@@ -4,18 +4,25 @@
   --shade3: #4D4D4D;
   --shade4: #B3B3B3;
   --shade5: #e3e3e3;
-  --red-shade1: #4a0707;
-  --red-shade2: #511e1e;
+  --shade6: #2f2f2f;
+  --red-shade1: #8a1e1e;
+  --red-shade2: #8e3e3e;
 }
 
-/**
-@media (prefers-color-scheme: dark) {
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --shade1: #fdfdfd;
+    --shade2: #f4f4f4;
+    --shade3: #686868;
+    --shade4: #282828;
+    --shade5: #242424;
+    --shade6: #d5d5d5;
+  }
 }
-*/
 
 body {
-  background-color: var(--bg);
+  background-color: var(--shade1);
   margin: 0;
 }
 

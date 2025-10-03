@@ -5,19 +5,8 @@
   flex-direction: row;
 }
 
-.content {
+.main {
   width: 100%;
-}
-
-.feed {
-  background-color: var(--shade2);
-  width: 400px;
-  height: 45px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border: 0;
-  cursor: pointer;
 }
 
 .sidebar {
@@ -28,6 +17,9 @@
   flex-direction: column;
   justify-content: space-between;
   width: 144px;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-right-color: var(--shade6);
 }
 
 .header {
@@ -38,7 +30,7 @@
   color: var(--shade5);
   border-bottom-width: thin;
   border-bottom-style: solid;
-  border-bottom-color: var(--shade3);
+  border-bottom-color: var(--shade6);
   padding-bottom: 6px;
 }
 
@@ -62,7 +54,6 @@
 }
 
 .listItem {
-  color: var(--shade4);
   background-color: var(--shade1);
   border-radius: 5px;
   height: 36px;
@@ -79,6 +70,7 @@
 }
 
 .listItemLink {
+  color: var(--shade4);
   height: inherit;
   display: flex;
   align-items: center;
@@ -93,20 +85,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: lightgray;
 }
 
-.listItemLink:visited, .listItemLinkLogout:visited, .listItemLink:active, .listItemLinkLogout:active {
+.listItemLinkLogout:visited {
+  color: lightgray;
+}
+
+.listItemLinkLogout:hover {
+  color: white;
+}
+
+.listItemLink:visited {
   color: var(--shade4);
 }
 
-.listItemLink:hover, .listItemLinkLogout:hover {
+.listItemLink:hover {
   color: var(--shade5);
 }
 
 .footer {
   border-top-style: solid;
   border-top-width: thin;
-  border-top-color: var(--shade3);
+  border-top-color: var(--shade6);
   padding-top: 9px;
   height: 80px;
   display: flex;
@@ -123,4 +124,31 @@
 
 .footerLink:hover {
   color: var(--shade5);
+}
+
+.feed {
+  background-color: var(--shade2);
+  border-left-style: solid;
+  border-left-width: thin;
+  border-left-color: var(--shade6);
+  min-width: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+.feedToggle {
+  width: 45px;
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+}
+
+.feedToggleSvg {
+  width: 24px;
+  height: 24px;
+  fill: var(--shade3);
+}
+
+.feedStream {
+  display: none;
 }

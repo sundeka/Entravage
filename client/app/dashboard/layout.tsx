@@ -4,6 +4,7 @@ import { FaUserGroup } from "react-icons/fa6";
 import { IoMdApps } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
 import { GrLogout } from "react-icons/gr";
+import { RiArrowLeftDoubleFill } from "react-icons/ri";
 import Link from 'next/link';
 
 export default function DashboardLayout({
@@ -69,7 +70,14 @@ export default function DashboardLayout({
       <main className={styles.main}>
         {children}
       </main>
-      <button className={styles.feed} /> {/** TODO: log stream */}
+      <div className={styles.feed}>
+        <button className={styles.feedToggle}>
+          <RiArrowLeftDoubleFill className={styles.feedToggleSvg} />
+        </button>
+        <div className={styles.feedStream}>
+          <p>foo</p>
+        </div>
+      </div>
     </div>
   )
 }

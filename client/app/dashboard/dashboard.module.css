@@ -88,11 +88,18 @@
   text-decoration: none !important;
 }
 
-.listItemLink:visited, .listItemLink:active {
+.listItemLinkLogout {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listItemLink:visited, .listItemLinkLogout:visited, .listItemLink:active, .listItemLinkLogout:active {
   color: var(--shade4);
 }
 
-.listItemLink:hover {
+.listItemLink:hover, .listItemLinkLogout:hover {
   color: var(--shade5);
 }
 

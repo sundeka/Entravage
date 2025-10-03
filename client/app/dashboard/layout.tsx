@@ -45,11 +45,10 @@ export default function DashboardLayout({
             </li>
             <li className={styles.listItem}>
               <Link 
-                className={styles.listItemLink}
+                className={styles.listItemLinkLogout}
                 href="/"
               >
                 <GrLogout />
-                Log out
               </Link>
             </li>
           </ul>

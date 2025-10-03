@@ -69,7 +69,7 @@
   border-color: var(--red-shade2);
 }
 
-.listItemLink {
+.navbarLink {
   color: var(--shade4);
   height: inherit;
   display: flex;
@@ -80,7 +80,7 @@
   text-decoration: none !important;
 }
 
-.listItemLinkLogout {
+.navbarLinkLogout {
   height: inherit;
   display: flex;
   align-items: center;
@@ -88,19 +88,19 @@
   color: lightgray;
 }
 
-.listItemLinkLogout:visited {
+.navbarLinkLogout:visited {
   color: lightgray;
 }
 
-.listItemLinkLogout:hover {
+.navbarLinkLogout:hover {
   color: white;
 }
 
-.listItemLink:visited {
+.navbarLink:visited {
   color: var(--shade4);
 }
 
-.listItemLink:hover {
+.navbarLink:hover {
   color: var(--shade5);
 }
 

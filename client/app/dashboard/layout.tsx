@@ -16,37 +16,45 @@ export default function DashboardLayout({
     <div className={styles.container}>
       <div className={styles.sidebar}>
         <header className={styles.header}>
-          <h1 className={styles.headerText}>Entra&nabla;age</h1>
+          <Link 
+            className={styles.navbarLink}
+            href="/dashboard"
+          >
+            <h1 className={styles.headerText}>Entra&nabla;age</h1>
+          </Link>
         </header>
         <nav className={styles.navigation}>
           <ul className={styles.list}>
             <li className={styles.listItem}>
-              <a className={styles.listItemLink}>
+              <a className={styles.navbarLink}>
                 <FaUserLarge />
                 Users
               </a>
             </li>
             <li className={styles.listItem}>
-              <a className={styles.listItemLink}>
+              <a className={styles.navbarLink}>
                 <FaUserGroup />
                 Groups
               </a>
             </li>
             <li className={styles.listItem}>
-              <a className={styles.listItemLink}>
+              <a className={styles.navbarLink}>
                 <IoMdApps />
                 Applications
               </a>
             </li>
             <li className={styles.listItem}>
-              <a className={styles.listItemLink}>
+              <Link 
+                className={styles.navbarLink}
+                href="/dashboard/settings"
+              >
                 <IoMdSettings />
                 Settings
-              </a>
+              </Link>
             </li>
             <li className={styles.listItem}>
               <Link 
-                className={styles.listItemLinkLogout}
+                className={styles.navbarLinkLogout}
                 href="/"
               >
                 <GrLogout />

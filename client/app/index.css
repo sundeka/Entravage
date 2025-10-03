@@ -1,0 +1,12 @@
+.home_root__div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__main {
+  width: 250px;
+  padding: 12px;
+  background-color: var(--bg-contrast);
+}
